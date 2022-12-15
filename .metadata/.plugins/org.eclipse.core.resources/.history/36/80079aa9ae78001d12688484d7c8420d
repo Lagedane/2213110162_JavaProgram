@@ -1,0 +1,16 @@
+package comboboxexample;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Option extends JFrame implements ActionListener{
+	
+	String[] messageStrings = {"Not Spicy", "A Little Spicy", "Medium", "Hot"};
+	JComboBox cmbMessageList = new JComboBox(messageStrings);
+	JLabel lblText = new JLabel();
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

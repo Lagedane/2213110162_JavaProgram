@@ -1,30 +1,31 @@
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import javax.swing.*;
-import java.text.*;
-import java.util.Scanner;
+
 
 public class Test {
-	static final double TAX_RATE_ABOVE_20K = 0.1;
-	static final double TAX_RATE_ABOVE_40K = 0.2;
-	static final double TAX_RATE_ABOVE_60K = 0.3;
-	public static void main(String[] args) {
-		DecimalFormat frm = new DecimalFormat("0.00");
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Enter the taxable income: $");
-		double taxableIncome = scan.nextDouble();
-		double taxPayable;
-		if (taxableIncome <= 20000) { // [0, 20000]
-			taxPayable = 0;
-			}
-		else if (taxableIncome <= 40000) { //[40001, 60000]
-			taxPayable = (taxableIncome-20000) * TAX_RATE_ABOVE_20K ;
-			}
-		else if (taxableIncome <= 60000) { // [40001, 60000]
-			taxPayable = ((taxableIncome-40000) * TAX_RATE_ABOVE_40K) + (20000*TAX_RATE_ABOVE_20K) ;
-			}
-		else { // [60001, ]
-			taxPayable = TAX_RATE_ABOVE_60K * (taxableIncome-60000)+ (TAX_RATE_ABOVE_40K*20000)+(TAX_RATE_ABOVE_20K*20000) ;
-			}
-		System.out.print("The income tax payable is: $" + frm.format(taxPayable));
-	}
+	
+    static JFrame f=new JFrame("Please select meat.");
+
+    public static void main(String[] args) {
+        f.setSize(450,450);
+        f.setLayout(null);
+        f.setVisible(true);
+        button("Beef",30);
+        button("Pork",80);
+        button("Chicken",130);
+        button("Fish",180);
+        button("Shripm",230);
+        button("Squid",280);
+        button("Seafood",330);
+
+    }
+    
+    public static void button(String meat,int position) {
+        JButton memu=new JButton(meat);
+        memu.setBounds(150,position,130,30);
+        f.add(memu);
+    }
+    
 
 }

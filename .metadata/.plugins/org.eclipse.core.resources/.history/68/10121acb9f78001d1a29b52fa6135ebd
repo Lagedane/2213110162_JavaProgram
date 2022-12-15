@@ -1,0 +1,41 @@
+import javax.swing.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        JFrame f=new JFrame("Please selsect meat.");
+        JButton beef=new JButton("เนื้อ");
+        JButton pork=new JButton("หมู");
+        JButton chick=new JButton("ไก่");
+        JButton fish=new JButton("ปลา");
+        JButton shripm=new JButton("กุ้ง");
+        JButton sqiud=new JButton("ปลาหมึก");
+        JButton sea=new JButton("ทะเล (รวม)");
+        
+        beef.setBounds(150,30,130,30);
+        f.add(beef);
+        
+        pork.setBounds(150,80,130,30);
+        f.add(pork);
+        
+        chick.setBounds(150,130,130,30);
+        f.add(chick);
+        
+        fish.setBounds(150,180,130,30);
+        f.add(fish);
+        
+        shripm.setBounds(150,230,130,30);
+        f.add(shripm);
+        
+        sqiud.setBounds(150,280,130,30);
+        f.add(sqiud);
+        
+        sea.setBounds(150,330,130,30);
+        f.add(sea);
+        f.setSize(450,450);
+        f.setLayout(null);
+        f.setVisible(true);
+
+    }
+
+}
