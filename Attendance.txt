@@ -1,0 +1,5 @@
+Date: 15-Dec-2022
+StudentID: 2213110162
+Fullname(in English): Lada Watanadilogkul
+AKA: Lagedane
+ClassDetail: Array in Java
