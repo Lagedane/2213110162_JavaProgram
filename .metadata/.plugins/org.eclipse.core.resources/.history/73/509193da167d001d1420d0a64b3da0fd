@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Lab607 {
+
+	static Scanner scan = new Scanner(System.in);
+	static String month[] = { "January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December" };
+	static int count[] = new int[12];
+	
+	public static void main(String[] args) {
+		inputBirthDate();
+	} // end of main
+	
+	public static void inputBirthDate() {
+		String inputBirthDate[] = new String[5];
+		for (int i = 0; i < inputBirthDate.length; i++) {
+			System.out.print("Enter BirthDate " + (i+1) + " : ");
+			inputBirthDate[i] = scan.nextLine();
+		} // end of FOR
+		
+	} // end of inputBirthDate
+	
+	/*public static int checkBirthDate() {
+		
+	} // end of checkBirthDate*/
+	
+	public static void displayCountBday() {
+		
+	}
+
+}
