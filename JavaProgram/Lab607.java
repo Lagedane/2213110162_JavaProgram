@@ -16,7 +16,7 @@ public class Lab607 {
 			System.out.print("Enter BirthDate " + (i+1) + " : ");
 			String bDate = scan.nextLine();
 			int bmonth = checkBirthDate(bDate);
-			inputBirthDate[i] = bmonth;
+			//inputBirthDate[i] = bmonth;
 			count[bmonth-1]++;
 		} // end of FOR
 		
