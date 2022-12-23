@@ -12,7 +12,7 @@ public class PiggyBank {
 		clear();
 		size = s;
 	} // end setPiggyBank
-	
+	 
 	public int getPiggyBank() {
 		return size;
 	}

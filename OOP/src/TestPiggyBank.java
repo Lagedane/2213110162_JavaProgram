@@ -14,7 +14,7 @@ public class TestPiggyBank {
 		 * System.out.println("Add 10 Baht Money: " + 34);
 		 * System.out.println("Money Total : " + pb.getTotal());
 		 * pb.addFive(100);*/
-		sizeOfPiggyBank();
+		sizeOfPiggyBank(); 
 		inputCoin();
 	} // end main()
 	

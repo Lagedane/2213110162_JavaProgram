@@ -30,7 +30,7 @@ public class StudentScore {
 		 *	if(std[i].isPass()) {
 		 *		System.out.println(">> " + std[i].getName() + " (" + std[i].getScore() + " )");
 		 *	}
-		 * } // end for */
+		 * } // end for */ 
 		
 		for(Student student : std) {
 			if(student.isPass()) {

@@ -12,7 +12,7 @@ public class Student {
 	} // end getName
 	
 	public void setScore (int Score) {
-		score = Score;
+		score = Score; 
 	} // end setScore
 	
 	public int getScore () {
