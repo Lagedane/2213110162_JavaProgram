@@ -5,7 +5,7 @@ public class Product {
 	private double price;
 	
 	public void setId(String ID) {
-		ID = id;
+		id = ID;
 	} // end setId
 	
 	public String getId() {
@@ -13,7 +13,7 @@ public class Product {
 	} // end getId
 	
 	public void setUnit(int UNIT) {
-		UNIT = unit;
+		unit = UNIT;
 	} // end setUnit
 	
 	public int getUnit() {
@@ -21,7 +21,7 @@ public class Product {
 	} // end getUnit
 	
 	public void setPrice(double PRICE) {
-		PRICE = price;
+		price = PRICE;
 	} // end setPrice
 	
 	public double getPrice() {
@@ -31,4 +31,13 @@ public class Product {
 	public double calculate() {
 		return unit * price;
 	} // end calculate
+	
+	public String checkProduct(int unit) {
+		return (unit < 5) ? "LOW" : (unit >= 5 && unit < 50) ? "NORMAL" : "HIGH";
+	} // end checkProduct
+	
+	public void listStatus() {
+		System.out.println(">> " + getId() + " has " + getUnit() + " units");
+	} //end listStatus
+	
 }

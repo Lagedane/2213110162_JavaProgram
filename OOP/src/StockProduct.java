@@ -1,10 +1,12 @@
 import java.util.*;
+import java.text.*;
 
 public class StockProduct {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Product[] input = new Product[4];
+		DecimalFormat frm = new DecimalFormat("#,###.00");
 		
 		for(int i = 0; i < input.length; i++) {
 			input[i] = new Product();
@@ -17,12 +19,20 @@ public class StockProduct {
 			System.out.println();
 		} // end for
 		
-		System.out.println();
+		System.out.println("\n----------------------------------------------------");
+
 		for(int i = 0; i < input.length; i++) {
-			System.out.println("Product ID : " + );
+			System.out.println("Product ID : " + input[i].getId() + ", Total price = " + frm.format(input[i].calculate()) + " baht.");
 		} // end for
 		
 		System.out.println("----------------------------------------------------");
+		
+		double sumTotal = 0;
+		for(Product total : input) {
+			sumTotal += total.calculate();
+		} // end for
+		
+		System.out.println("Total price of all products is " + frm.format(sumTotal));
 
 	} // end main()
 

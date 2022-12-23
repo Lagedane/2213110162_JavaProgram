@@ -14,12 +14,9 @@ public class Lab305 {
 		} // end while
 		
 		System.out.println();
-		int i = 0;
-		int sum = x + (x+(i+1));
-		System.out.println(x + " + " + (x+(i+1)) + " = " + sum);
-		for(i = 1; i < (y-x); i++) {
-			int finalSum = sum + (x+(i+1));
-			System.out.println(sum + " + " + (x+(i+1)) + " = " + finalSum);
+		for(int i = x; i < y; i++) {
+			System.out.println(x + " + " + (i+1) + " = " + (x+i+1));
+			x += i+1;
 		} // end for
 	} // end main()
 
