@@ -56,4 +56,4 @@ public class CheckStockProduct {
 	public static void line() {
 	System.out.println("----------------------------------------------------");
 	}
-}
+} 

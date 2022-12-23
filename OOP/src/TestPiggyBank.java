@@ -1,5 +1,5 @@
 import java.util.*;
-
+ 
 public class TestPiggyBank {
 	static Scanner scan = new Scanner(System.in);
 	static PiggyBank pb = new PiggyBank();

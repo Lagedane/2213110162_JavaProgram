@@ -1,5 +1,5 @@
 import java.util.*;
-
+ 
 public class StudentScore {
 	
 	public static void main(String[] args) {
