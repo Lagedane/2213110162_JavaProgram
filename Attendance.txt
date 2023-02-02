@@ -2,4 +2,4 @@ Date: 02-Feb-2023
 StudentID: 2213110162
 Fullname(in English): Lada Watanadilogkul
 AKA: Lagedane
-ClassDetail: Inheritance and Polymor
+ClassDetail: Composition, Inheritance, and Polymorphism
