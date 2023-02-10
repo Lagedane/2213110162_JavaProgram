@@ -49,7 +49,7 @@ public class FictionBook implements Author, Book {
 	
 	@Override
 	public boolean checkEmail() {
-		return !((email.endsWith("@hotmail.com") || email.trim().endsWith("@windowslive.com")) && !(email.contains(" "))) ? true : false;
+		return !((email.endsWith("@hotmail.com") || email.endsWith("@windowslive.com")) && !(email.contains(" "))) ? true : false;
 	}
 	
 	public String toString() {
