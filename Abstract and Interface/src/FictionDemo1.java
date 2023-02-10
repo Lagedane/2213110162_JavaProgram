@@ -12,23 +12,24 @@ public class FictionDemo1 {
 		FictionBook book = new FictionBook(bookName, bookYear);
 		
 		System.out.print("Input Author name  : ");
-		String author = scan.next();
 		scan.nextLine();
-		System.out.print("Input Author email : ");
-		String email = scan.next();
-		
+		String author = scan.nextLine();
 		book.setAuthorName(author);
-		book.setEmail(email);
-		
 		while(book.checkFormatName()) {
 			System.out.print("Input Author name, again  : ");
-			author = scan.next();
+			author = scan.nextLine();
+			book.setAuthorName(author);
 		} // end of while
-		
+				
+		System.out.print("Input Author email : ");
+		String email = scan.nextLine();
+		book.setEmail(email);
 		while(book.checkEmail()) {
 			System.out.print("Input Author email, again  : ");
-			email = scan.next();
+			email = scan.nextLine();
+			book.setEmail(email);
 		} // end of while
+				
 		System.out.println(book.toString());
 	} // end of main()
 } // end of class
